@@ -1,0 +1,102 @@
+/* Base styles (common for both themes) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links li {
+  list-style: none;
+  display: inline;
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.cta-btn {
+  padding: 15px 30px;
+  background-color: #ff6347;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff6347;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.hero {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Light Theme Styles */
+body.light-theme {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+body.light-theme .hero {
+  background-image: url('images/light-theme-background.jpg');
+  background-size: cover;
+}
+
+body.light-theme .cta-btn {
+  background-color: #ff6347;
+}
+
+body.light-theme header {
+  background-color: #ffffff;
+  color: #333;
+}
+
+body.light-theme .navbar a {
+  color: #333;
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+  background-color: #181818;
+  color: #f4f4f4;
+}
+
+body.dark-theme .hero {
+  background-image: url('images/dark-theme-background.jpg');
+  background-size: cover;
+}
+
+body.dark-theme .cta-btn {
+  background-color: #ff4500;
+}
+
+body.dark-theme header {
+  background-color: #333;
+}
+
+body.dark-theme .navbar a {
+  color: #f4f4f4;
+}
